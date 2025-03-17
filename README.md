@@ -1,6 +1,7 @@
 # CI/CD Pipelines  
 
-![e37ce13c88889f048aa2b1acae7d6cbfeea5678f-2048x876](https://github.com/user-attachments/assets/32895b25-932c-4053-9394-7fdb5ff6f395)
+<img width="532" alt="image" src="https://github.com/user-attachments/assets/4f0f251b-fe5e-4633-b86b-c1c8c9e70e81" />
+
 
 A collection of CI/CD pipeline configurations for automating software deployment and delivery. This repository contains pipelines for various tools like Jenkins, GitHub Actions, GitLab CI/CD, and more.  
 
