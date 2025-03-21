@@ -6,7 +6,8 @@ pipeline {
     }
   }
   environment {
-    JAVA_HOME = tool name: 'jdk-17', type: 'jdk'
+    //JAVA_HOME = tool name: 'jdk-17', type: 'jdk'
+    JAVA_HOME = '/usr/lib/jvm/java-17-openjdk-amd64'
     PATH = "${JAVA_HOME}/bin:${PATH}"
     MAVEN_HOME = tool name: 'Maven', type: 'maven'
   }
