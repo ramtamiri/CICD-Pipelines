@@ -6,11 +6,7 @@ pipeline {
     }
   }
   environment {
-<<<<<<< HEAD
-    JAVA_HOME = '/usr/lib/jvm/java-17-openjdk-amd64/bin/java'
-=======
     JAVA_HOME = '/usr/lib/jvm/java-17-openjdk-amd64'
->>>>>>> 06823b3919488ce542917ca2c1a3ab4678e3dbd3
     PATH = "${JAVA_HOME}/bin:${PATH}"
     MAVEN_HOME = tool name: 'Maven', type: 'maven'
   }
