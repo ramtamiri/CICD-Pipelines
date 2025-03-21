@@ -5,6 +5,11 @@ pipeline {
       args '--user root -v /var/run/docker.sock:/var/run/docker.sock' // mount Docker socket to access the host's Docker daemon
     }
   }
+  environment {
+    JAVA_HOME = tool name: 'jdk-17', type: 'jdk'
+    PATH = "${JAVA_HOME}/bin:${PATH}"
+    MAVEN_HOME = tool name: 'Maven', type: 'maven'
+  }
   stages {
     stage('Checkout') {
       steps {
