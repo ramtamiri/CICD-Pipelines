@@ -6,7 +6,7 @@ pipeline {
     }
   }
   environment {
-    JAVA_HOME = '/usr/lib/jvm/java-17-openjdk-amd64'
+    JAVA_HOME = tool name: 'jdk-17', type: 'jdk'
     PATH = "${JAVA_HOME}/bin:${PATH}"
     MAVEN_HOME = tool name: 'Maven', type: 'maven'
   }
@@ -21,9 +21,6 @@ pipeline {
       steps {
         echo 'Listing directory content for debugging'
         sh 'ls -ltr'
-        // Debugging step to print JAVA_HOME and Java version
-        echo "JAVA_HOME is set to: ${JAVA_HOME}"
-        sh 'java -version'
         // Build the project and create a JAR file
         echo 'Running Maven Clean and Package'
         sh 'cd java-maven-sonar-argocd-helm-k8s/spring-boot-app && mvn clean package'
